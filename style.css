@@ -6,7 +6,6 @@
 body{
     scroll-behavior: smooth;
     font-family: 'Work Sans';
-    background: #e5e5e5;
 }
 nav{
     background-color: #ffffff !important;
@@ -33,7 +32,7 @@ nav a{
     background: transparent;
     width: 70%;
     padding: 12px 20px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #ffffff;
     border-radius: 0px;
     box-sizing: border-box;   
     float: left;
@@ -43,12 +42,14 @@ nav a{
     float: left;
     width: 30%;
     padding: 12px 20px;
+    border: 1px solid #ccc;
     border-left: none !important;
     color: #64A156;
-    background-color: white;
+    background-color: white !important;
     cursor: pointer;
 }
 .input-field input:focus{
-    outline: none;
+    outline: 0 none;
+    border: 1px solid #ffffff !important;
     box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
 }
