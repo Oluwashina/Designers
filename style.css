@@ -24,7 +24,7 @@ nav a{
 .check-color{
     color: #3CCF8E;
 }
-#fifth .price-row{
+#Packages .price-row{
     padding: 2px !important;
 }
 /* footer */
@@ -54,10 +54,10 @@ nav a{
     border: 1px solid #ffffff !important;
     box-shadow: 0px 5px 30px rgba(50, 54, 67, 0.2);
 }
-#second .work-effect{
+#Work .work-effect{
     transition: all ease-in 0.6s;
 }
-#second .work-effect:hover{
+#Work .work-effect:hover{
     transform: scale(0.90);
     transition: all ease-in 0.6s;
 }
