@@ -70,7 +70,7 @@
 
     <!-- SECTION TWO -->
     <section id="Work">
-        <div class="container nav" style="margin-top: 40px;">
+        <div class="container nav hide-on-med-and-down" style="margin-top: 40px;">
             <h4 style="color: #033953; margin-bottom: 20px;">Our Work</h4>
             <div class="row">
                 <div class="col s12 l6 work-effect">
@@ -97,6 +97,40 @@
                 </div>
             </div>
         </div>
+
+        <!-- our work for mobile -->
+        <div class="container nav hide-on-large-only" style="margin-top: 40px;">
+                <h4 style="color: #033953; margin-bottom: 20px;">Our Work</h4>
+                <div class="row">
+                    <div class="col s12 work-effect">
+                        <img src="images/seamlesshr-home.jpg" class="responsive-img" alt="portfolio one">
+                        <h6 style="color: #033953;">Seamless HR</h6>
+                        <p>Logo Design and Animation, Branding, Collateral Design</p>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col s12 work-effect">
+                            <img src="images/harcourt-home.jpg" class="responsive-img" alt="portfolio two">
+                            <h6 style="color: #033953;">Harcourt Hotels</h6>
+                            <p>Web Prototype, Brand Assets, Collateral Design,Logo Design and Animation.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col s12 work-effect">
+                                <img src="images/magic-carpet-home.jpg" class="responsive-img" alt="portfolio one">
+                                <h6 style="color: #033953;">Magic Carpet Studios</h6>
+                                <p>UI & UX Design Prototype</p>
+                            </div>
+                    </div>
+                <div class="row">
+                    <div class="col s12 work-effect">
+                            <img src="images/kangpe-home.jpg" class="responsive-img" alt="portfolio two">
+                            <h6 style="">Kangpe</h6>
+                            <p>Visual Identity Design</p>
+                    </div>
+                </div>
+            </div>
+
     </section>
 
    
@@ -105,7 +139,7 @@
     <section id="Packages" style="background: #F5F7FA; padding-bottom: 50px;">
             <div class="container nav">
                 <h4 style="color: #033953; padding-top: 40px;">Our Packages</h4>
-                <h5 class="center-align">Let's design for you!</h5>
+                <h5 class="center-align" style="margin-top: 50px;">Let's design for you!</h5>
                 <p class="center-align" style="margin-bottom: 30px;">We have professional designers available to get your job done at the speed of light.</p>
                 <div class="row hide-on-med-and-down">
                         <div class="col l4 s12 price-row" style="margin-top: 30px;">
@@ -438,11 +472,17 @@
     <section id="seven">
         <div class="container nav">
             <div class="row">
-                <div class="col l6 s12" style="background: white;">
+                <div class="col l6 s12 hide-on-med-and-down" style="background: white;">
                     <h5 style="color: #00D28A; text-align: center; margin-top: 200px;">Can't find a package that suits your demand?
                         <a href="https://api.whatsapp.com/send?phone=+2349037716931" style="color:#00D28A; text-decoration: underline;">Click</a> let's chat on whatsapp.
                     </h5>
                 </div>
+                <!-- cant find a package for mobile -->
+                <div class="col l6 s12 hide-on-large-only" style="background: white;">
+                        <h5 style="color: #00D28A; text-align: center; margin-top: 50px;">Can't find a package that suits your demand?
+                            <a href="https://api.whatsapp.com/send?phone=+2349037716931" style="color:#00D28A; text-decoration: underline;">Click</a> let's chat on whatsapp.
+                        </h5>
+                    </div>
                 <div class="col l6 s12">
                     <div class="center-align">
                         <img src="images/image5.png" alt="phone" class="responsive-img">
@@ -476,7 +516,7 @@
                         <ul style="display: flex;">
                             <li ><a  href="#" style="color: white;"><i class="fab fa-twitter"></i></a></li>
                             <li style="margin-left: 20px;"><a href="#" style="color: white;"><i class="fab fa-facebook"></i></a></li>
-                            <li style="margin-left: 20px;"><a href="#" style="color: white;"><i class="fab fa-instagram"></i></a></li>
+                            <li style="margin-left: 20px;"><a href="https://instagram.com/designr.ng" style="color: white;"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                 </div>
             </div>
@@ -505,10 +545,11 @@
 <script>
     $(document).ready(function(){
     $('.sidenav').sidenav();
+    $('.sidenav').sidenav().on('click tap', 'li a', () => {
+                 $('.sidenav').sidenav('close');
+            });
      });
-function yes(){
-    alert("Hello World!!!")
-}
+
 </script>
 
 
