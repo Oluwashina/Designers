@@ -23,7 +23,7 @@
                             </a>
                         <ul class="right hide-on-med-and-down">
                                 <li><a href="#">HOME</a>
-                                <li><a href="#second">PORTFOLIO</a></li>
+                                <li><a href="#second">WORK</a></li>
                                 <li><a href="#fifth">PACKAGES</a></li>
                                 <li><a href="#four">OUR PARTNERS</a></li>
                                 <li><a href="#third">OUR CLIENTS</a></li>
@@ -46,12 +46,12 @@
 
         <div class="container nav" style="margin-top: 80px;">
             <div class="row">
-                <div class="col s12 l5">
-                    <h4 style="font-size: 45px; width: 250px; margin-top: 80px;">We <span style="color: #48C074;">design</span> the way <span style="color: #48C074;">you love</span> it!</h4>
+                <div class="col s12 l5 center-align">
+                    <h4 style="font-size: 45px; margin-top: 100px;">We <span style="color: #48C074;">design</span> the way <span style="color: #48C074;">you love</span> it!</h4>
                 </div>
 
                 <div class="col l7">
-                    <img src="images/image1.png" class="responsive-img">
+                    <img src="images/image1.png" class="responsive-img" alt="first image">
                 </div>
             </div>
         </div>
@@ -60,30 +60,41 @@
     <!-- SECTION TWO -->
     <section id="second">
         <div class="container nav">
-            <h5 style="color: #48C074;">Our Portfolio</h5>
+            <h5 style="color: #033953; margin-bottom: 20px;">Our Work</h5>
             <div class="row">
-                <div class="col s12 l6">
-                    <img src="images/image2.png" class="responsive-img">
+                <div class="col s12 l6 work-effect">
+                    <img src="images/seamlesshr-home.jpg" class="responsive-img" alt="portfolio one">
+                    <h6 style="color: #033953;">Seamless HR</h6>
+                    <p>Logo Design and Animation, Branding, Collateral Design</p>
                 </div>
-                <div class="col l6 s12">
-                  <img src="images/image8.png" class="responsive-img">
+                <div class="col l6 s12 work-effect">
+                  <img src="images/harcourt-home.jpg" class="responsive-img" alt="portfolio two">
+                  <h6 style="color: #033953;">Harcoult Hotels</h6>
+                  <p>Web Prototype, Brand Assets, Collateral Design,Logo Design and Animation.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col s12 l12">
-                    <img src="images/image7.png" class="responsive-img">
+                <div class="col s12 l6 work-effect">
+                    <img src="images/magic-carpet-home.jpg" class="responsive-img" alt="portfolio one">
+                    <h6 style="color: #033953;">Magic Carpet Studios</h6>
+                    <p>UI & UX Design Prototype</p>
+                </div>
+                <div class="col l6 s12 work-effect">
+                  <img src="images/kangpe-home.jpg" class="responsive-img" alt="portfolio two">
+                  <h6 style="">Kangpe</h6>
+                  <p>Visual Identity Design</p>
                 </div>
             </div>
-            <div class="container nav center-align">
-                    <a href="#" class="" style="background: linear-gradient(90deg, #48C074 0%, #48C074 100%); border-radius: 12px; color: #ffffff; padding: 10px 30px;">View More</a>
-                </div>
+            <!-- <div class="container nav center-align">
+                <a class="waves-effect waves-light" style="background:linear-gradient(90deg, #48C074 0%, #48C074 100%); border-radius: 12px; color: #ffffff; padding: 10px 35px;"><i class="material-icons right">chevron_right</i>VIEW MORE</a>
+            </div> -->
         </div>
     </section>
 
     <!-- SECTION THREE -->
-    <section id="third">
+    <!-- <section id="third">
         <div class="container nav">
-            <h5 style="color: #48C074;">Our Clients</h5>
+            <h5 style="color: #033953;">Our Clients</h5>
         <div class="row">
             <div class="col s12 l3">
                 <div class="card">
@@ -115,17 +126,17 @@
             </div>
         </div>
     </div>
-    </section>
+    </section> -->
 
     <!-- SECTION FOUR -->
-    <section id="four">
+    <!-- <section id="four">
             <div class="container nav">
-                <h5 style="color: #48C074;">Our Partners</h5>
+                <h5 style="color: #033953;">Our Partners</h5>
             <div class="row">
                 <div class="col s12 l3">
                     <div class="card">
                         <div class="card-image">
-                            <img src="images/Rectangle105.png" alt="client-one">
+                            <img src="images/image10.png" alt="client-one">
                          </div>
                     </div>
                 </div> 
@@ -152,12 +163,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- SECTION SIXTH -->
     <section id="fifth" style="background: #F5F7FA; padding-bottom: 150px;">
             <div class="container nav">
-                <h5 style="color: #48C074; padding-top: 40px;">Our Packages</h5>
+                <h5 style="color: #033953; padding-top: 40px;">Our Packages</h5>
                 <h4 class="center-align">Let's design for you!</h4>
                 <p class="center-align" style="margin-bottom: 30px;">We have professional designers available to get your job done at the speed of light.</p>
                 <div class="row hide-on-med-and-down">
@@ -506,7 +517,7 @@
     </section>
 
     <!-- footer design -->
-    <footer style="background: #48C074; padding-bottom: 20px;">
+    <footer style="background: #48C074; padding-bottom: 20px; margin-top: 60px;">
         <div class="container nav">
             <div class="row">
                 <div class="col s12 l12">
@@ -539,7 +550,7 @@
                 </div>
                 <div class="col s12 l4 input-field">
                     <input id="search" type="text">
-                    <button type="submit">Email</button>
+                    <button type="submit" onclick="yes()">Email</button>
                 </div>
             </div>
         </div>
@@ -570,6 +581,12 @@
 <script src="https://kit.fontawesome.com/d54c227c34.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script>
+function yes(){
+    alert("Hello World!!!")
+}
+</script>
+
 
 </body>
 </html>
