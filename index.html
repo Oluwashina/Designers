@@ -189,7 +189,7 @@
                 </div>
                 
                 <div style="margin-top: 50px;" class="center-align">
-                <a style="background: #FFFFFF; border-radius: 2.32479px; font-weight: bold; color: #5B6B82; border: 0.581197px solid #5B6B82; padding: 8px 18px;" href="#">Choose Plan</a>
+                <a onclick="standardPay()" style="background: #FFFFFF; border-radius: 2.32479px; font-weight: bold; color: #5B6B82; border: 0.581197px solid #5B6B82; padding: 8px 18px;" href="#">Choose Plan</a>
                 </div>                    
                         </div>
                     </div>
@@ -244,7 +244,7 @@
                 </div>
                 
                 <div style="margin-top: 50px;" class="center-align">
-                <a style="background: #3CCF8E; border-radius: 2.32479px; font-weight: bold; color: #ffffff;padding: 8px 18px;" href="#">Choose Plan</a>
+                <a onclick="premiumPay()" style="background: #3CCF8E; border-radius: 2.32479px; font-weight: bold; color: #ffffff;padding: 8px 18px;" href="#">Choose Plan</a>
                 </div>                    
                         </div>
                     </div>
@@ -296,7 +296,7 @@
                 </div>
                 
                 <div style="margin-top: 50px;" class="center-align">
-                <a style="background: #FFFFFF; border-radius: 2.32479px; font-weight: bold; color: #5B6B82; border: 0.581197px solid #5B6B82; padding: 8px 18px;" href="#">Choose Plan</a>
+                <a  onclick="platinumPay()" style="background: #FFFFFF; border-radius: 2.32479px; font-weight: bold; color: #5B6B82; border: 0.581197px solid #5B6B82; padding: 8px 18px;" href="#">Choose Plan</a>
                 </div>                    
                         </div>
                     </div>
@@ -550,6 +550,91 @@
             });
      });
 
+function standardPay() {
+var handler = PaystackPop.setup({ 
+    key: 'pk_test_703ef638e11c6db14b0a89a4a1d8bccd45f8f427', //put your public key here
+    email: 'info@360trendies.com', //put your customer's email here
+    amount: 4000000, //amount the customer is supposed to pay
+    metadata: {
+        custom_fields: [
+            {
+                display_name: "Mobile Number",
+                variable_name: "mobile_number",
+                value: "+2348012345678" //customer's mobile number
+            }
+        ]
+    },
+    callback: function (response) {
+        //after the transaction have been completed
+        //make post call  to the server with to verify payment 
+        //using transaction reference as post data
+        alert('Success, transation ref is ' + response);     
+    },
+    onClose: function () {
+        //when the user close the payment modal
+        alert('Transaction cancelled');
+    }
+});
+handler.openIframe(); //open the paystack's payment modal
+}
+
+// premiumpay
+function premiumPay() {
+var handler = PaystackPop.setup({ 
+    key: 'pk_test_703ef638e11c6db14b0a89a4a1d8bccd45f8f427', //put your public key here
+    email: 'info@360trendies.com', //put your customer's email here
+    amount: 7000000, //amount the customer is supposed to pay
+    metadata: {
+        custom_fields: [
+            {
+                display_name: "Mobile Number",
+                variable_name: "mobile_number",
+                value: "+2348012345678" //customer's mobile number
+            }
+        ]
+    },
+    callback: function (response) {
+        //after the transaction have been completed
+        //make post call  to the server with to verify payment 
+        //using transaction reference as post data
+        alert('Success, transation ref is ' + response);     
+    },
+    onClose: function () {
+        //when the user close the payment modal
+        alert('Transaction cancelled');
+    }
+});
+handler.openIframe(); //open the paystack's payment modal
+}
+
+// platinumPay
+function platinumPay() {
+var handler = PaystackPop.setup({ 
+    key: 'pk_test_703ef638e11c6db14b0a89a4a1d8bccd45f8f427', //put your public key here
+    email: 'info@360trendies.com', //put your customer's email here
+    amount: 10000000, //amount the customer is supposed to pay
+    metadata: {
+        custom_fields: [
+            {
+                display_name: "Mobile Number",
+                variable_name: "mobile_number",
+                value: "+2348012345678" //customer's mobile number
+            }
+        ]
+    },
+    callback: function (response) {
+        //after the transaction have been completed
+        //make post call  to the server with to verify payment 
+        //using transaction reference as post data
+        alert('Success, transation ref is ' + response);     
+    },
+    onClose: function () {
+        //when the user close the payment modal
+        alert('Transaction cancelled');
+    }
+});
+handler.openIframe(); //open the paystack's payment modal
+}
 </script>
 
 
