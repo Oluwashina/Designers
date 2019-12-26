@@ -26,6 +26,11 @@ nav a{
 }
 #Packages .price-row{
     padding: 2px !important;
+    transition: all ease-in-out 0.6s;
+}
+#Packages .price-row:hover{
+    transform: scale(1.07);
+    transition: all ease-in-out 0.6s;
 }
 #Work .work-effect{
     transition: all ease-in 0.6s;
