@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Designr</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+           <nav class="nav-wrapper no-shadows">
+               <div class="container nav">
+                   <a href="#" class="brand-logo">
+                       <img src="images/image-6.png" alt="logo" width="129" height="30" style="margin-top: 15px;" >
+                   </a>
+                   <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                           <i class="material-icons">menu</i>
+                       </a>
+                   <ul class="right hide-on-med-and-down">
+                           <li><a href="index.html">HOME</a>
+                           <li><a href="index.html#Work">WORK</a></li>
+                           <li><a href="index.html#Packages">PACKAGES</a></li>
+                   </ul>
+               </div>
+           </nav>
+       </div>
+       
+           <ul class="sidenav white" id="mobile-links">
+                   <li><a href="index.html" class="waves-effect" target="_self">HOME</a></li>
+                   <li><a href="index.html#Work" class="waves-effect" target="_self">WORK</a></li>
+                   <li><a href="index.html#Packages" class="waves-effect" target="_self">PACKAGES</a></li>
+          </ul>   
+    </header>
+
+    <!-- section one -->
+    <!-- Fill in details about brief for design -->
+    <div class="container brief-form hide-on-med-and-down" style="background: #FFFFFF; box-shadow: 0px 4px 40px rgba(111, 190, 236, 0.459126);
+    border-radius: 6px; margin-top: 40px; margin-bottom: 40px; padding-bottom: 40px;">
+
+        <div class="center-align" style="padding-top: 50px;">
+        <img src="images/logo.png" alt="logo" class="responsive-img">
+        </div>
+
+        <div class="center-align">
+        <h4 style="color: #00B334;">Upload your design brief here!.</h4>
+        </div>
+
+     <form>
+        <div class="container mycont">
+        <div class="row">
+            <div class="col l12 s12">
+                <h6>Full Name</h6>
+                <input class="browser-default brief-input" name="name"  placeholder="Enter your full name" type="text" required>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col l12 s12">
+                <h6>Email</h6>
+                <input class="browser-default brief-input" name="_replyto"  placeholder="Enter your Email address here" type="email" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col l12 s12 phone-input">
+                <h6>Phone</h6>
+                <button type="submit">+234</button>  
+                <input class="browser-default" name="PhoneNumber"  placeholder="Enter your phone number here" type="text" pattern="^[0]\d{10}$" title='Phone Number (Format: 081-000-000-00)' required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col l12 s12">
+                <h6>Company Name</h6>
+                <input class="browser-default brief-input" name="CompanyName"  placeholder="Enter your company name" type="text" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col l12 s12">
+                <h6>Your Brief</h6>
+                <input class="browser-default brief-input" name="Job Brief"  placeholder="Enter your design brief here" type="text" required>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="center-align" style="margin-top: 40px;">
+            <input  type="submit" value="SUBMIT" class="btn" style="background: #1BB934; color: white; border-radius: 5px;">
+        </div>
+    </form>
+
+        <div class="center-align" style="margin-top: 40px;">
+            <h6 style="color: #00B334;">You can also send your brief to us on <a href="https://api.whatsapp.com/send?phone=+2349037716931" style="color:#00B334; text-decoration: underline;">Whatsapp</a> 09037716931 or <a href="mailto:design@designr.ng" style="color:#00B334;">design@designr.ng.</a></h6>
+        </div>
+    </div>
+
+    <!--Mobile Brief form   -->
+    <div class="container hide-on-large-only" style="background: #FFFFFF; box-shadow: 0px 4px 40px rgba(111, 190, 236, 0.459126);
+    border-radius: 6px; margin-top: 40px; margin-bottom: 40px; padding-bottom: 40px;">
+
+        <div class="center-align" style="padding-top: 50px;">
+        <img src="images/logo.png" alt="logo" class="responsive-img">
+        </div>
+
+        <div class="center-align">
+        <h5 style="color: #00B334;">Upload your design brief here!</h5>
+        </div>
+
+        <form action="mailto:shinzbaba@gmail.com" method="POST" enctype="multipart/form-data">
+        <div class="container">
+        <div class="row">
+            <div class="col l12 s12">
+                <h6>Full Name</h6>
+                <input class="browser-default brief-input"  placeholder="Enter your full name" type="text" required>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col l12 s12">
+                <h6>Email</h6>
+                <input class="browser-default brief-input"  placeholder="Enter your Email address here" type="email" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col l12 s12 phone-input">
+                <h6>Phone</h6>
+                <button type="submit">+234</button>  
+                <input class="browser-default"  placeholder="Enter your phone number here" type="text" pattern="^[0]\d{10}$" title='Phone Number (Format: 081-000-000-00)' required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col l12 s12">
+                <h6>Company Name</h6>
+                <input class="browser-default brief-input"  placeholder="Enter your company name" type="text" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col l12 s12">
+                <h6>Your Brief</h6>
+                <input class="browser-default brief-input"  placeholder="Enter your design brief here" type="text" required>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="center-align" style="margin-top: 40px;">
+            <input type="submit" value="SUBMIT" class="btn" style="background: #1BB934; color: white; border-radius: 5px;">
+        </div>
+    </form>
+
+        <div class="center-align" style="margin-top: 40px;">
+            <h6 style="color: #00B334;">You can also send your brief to us on <a href="https://api.whatsapp.com/send?phone=+2349037716931" style="color:#00B334; text-decoration: underline;">Whatsapp</a> 09037716931 or <a href="mailto:design@designr.ng" style="color:#00B334;">design@designr.ng.</a></h6>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+<script src="https://kit.fontawesome.com/d54c227c34.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.sidenav').sidenav().on('click tap', 'li a', () => {
+                 $('.sidenav').sidenav('close');
+            });
+     });
+</script>
+</body>
+</html>
