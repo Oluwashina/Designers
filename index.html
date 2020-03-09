@@ -17,7 +17,7 @@
                 <nav class="nav-wrapper no-shadows">
                     <div class="container nav">
                         <a href="#" class="brand-logo">
-                            <img src="images/image-6.png" alt="logo" width="129" height="30" style="margin-top: 15px;" >
+                            <img src="images/image-6.png" alt="logo" width="129" height="30" style="margin-top: 15px;">
                         </a>
                         <a href="#" class="sidenav-trigger" data-target="mobile-links">
                                 <i class="material-icons">menu</i>
@@ -30,6 +30,8 @@
                     </div>
                 </nav>
             </div>
+            <div id="progress"></div>
+           
             
                 <ul class="sidenav white" id="mobile-links">
                         <li><a href="#" class="waves-effect" target="_self">HOME</a></li>
@@ -654,8 +656,17 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="page-scroll-progress-bar/jquery.progress.js"></script>
 <script>
     var scroll = new SmoothScroll('a[href*="#"]');
+    $(document).ready(function(){
+        $('#progress').progress({
+            position:'top',
+            wapperBg:'#eee',
+            innerBg:'#3CCF8E'
+        });
+
+    })
 </script>
 <script>
     $(document).ready(function(){
@@ -665,96 +676,10 @@
             });
     $('.modal').modal();
      });
-
-function standardPay() {
-var handler = PaystackPop.setup({ 
-    key: 'pk_test_703ef638e11c6db14b0a89a4a1d8bccd45f8f427', //put your public key here
-    email: 'info@360trendies.com', //put your customer's email here
-    amount: 4000000, //amount the customer is supposed to pay
-    metadata: {
-        custom_fields: [
-            {
-                display_name: "Mobile Number",
-                variable_name: "mobile_number",
-                value: "+2348012345678" //customer's mobile number
-            }
-        ]
-    },
-    callback: function (response) {
-        //after the transaction have been completed
-        //make post call  to the server with to verify payment 
-        //using transaction reference as post data
-        alert('Success, transaction ref is ' + response);     
-    },
-    onClose: function () {
-        //when the user close the payment modal
-        alert('Transaction cancelled');
-    }
-});
-handler.openIframe(); //open the paystack's payment modal
-}
-
-// premiumpay
-function premiumPay() {
-var handler = PaystackPop.setup({ 
-    key: 'pk_test_703ef638e11c6db14b0a89a4a1d8bccd45f8f427', //put your public key here
-    email: 'info@360trendies.com', //put your customer's email here
-    amount: 7000000, //amount the customer is supposed to pay
-    metadata: {
-        custom_fields: [
-            {
-                display_name: "Mobile Number",
-                variable_name: "mobile_number",
-                value: "+2348012345678" //customer's mobile number
-            }
-        ]
-    },
-    callback: function (response) {
-        //after the transaction have been completed
-        //make post call  to the server with to verify payment 
-        //using transaction reference as post data
-        alert('Success, transaction ref is ' + response);     
-    },
-    onClose: function () {
-        //when the user close the payment modal
-        alert('Transaction cancelled');
-    }
-});
-handler.openIframe(); //open the paystack's payment modal
-}
-
-// platinumPay
-function platinumPay() {
-var handler = PaystackPop.setup({ 
-    key: 'pk_test_703ef638e11c6db14b0a89a4a1d8bccd45f8f427', //put your public key here
-    email: 'info@360trendies.com', //put your customer's email here
-    amount: 10000000, //amount the customer is supposed to pay
-    metadata: {
-        custom_fields: [
-            {
-                display_name: "Mobile Number",
-                variable_name: "mobile_number",
-                value: "+2348012345678" //customer's mobile number
-            }
-        ]
-    },
-    callback: function (response) {
-        //after the transaction have been completed
-        //make post call  to the server with to verify payment 
-        //using transaction reference as post data
-        alert('Success, transaction ref is ' + response);     
-    },
-    onClose: function () {
-        //when the user close the payment modal
-        alert('Transaction cancelled');
-    }
-});
-handler.openIframe(); //open the paystack's payment modal
-}
 </script>
    <!-- tawk -->
    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+<script>
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
